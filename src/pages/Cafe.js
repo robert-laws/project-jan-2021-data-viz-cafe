@@ -28,8 +28,11 @@ export const Cafe = () => {
         </div>
         <div className='column is-3'>
           <div className='box has-text-centered'>
-            <Link className='is-size-3-desktop is-size-4-mobile' to='/stores'>
-              Stores
+            <Link
+              className='is-size-3-desktop is-size-4-mobile'
+              to='/locations'
+            >
+              Locations
               <figure class='image'>
                 <img
                   src={suburbanThumbnail}

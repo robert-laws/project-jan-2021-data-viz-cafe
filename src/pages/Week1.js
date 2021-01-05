@@ -23,6 +23,7 @@ import goodDv2 from '../images/good-dv-2.png';
 import barChartExample from '../images/bar-chart-example.png';
 import multisetBarChartExample from '../images/multiset-bar-chart-example.png';
 import pieChartExample from '../images/pie-chart-example.png';
+import dataVisualizationComponents from '../images/data-visualization-components.png';
 
 export const Week1 = () => {
   return (
@@ -88,6 +89,18 @@ export const Week1 = () => {
         <SectionTitle id='elements-of-data-visualizations'>
           Elements of Data Visualizations
         </SectionTitle>
+
+        <SectionContent>
+          <div class='columns'>
+            <div class='column is-three-fifths is-offset-one-fifth'>
+              <Image
+                src={dataVisualizationComponents}
+                alt='Data Visualization Components'
+                captionText='Components of a Data Visualization'
+              />
+            </div>
+          </div>
+        </SectionContent>
         <SectionContent>
           <SectionList
             lists={[
@@ -116,7 +129,7 @@ export const Week1 = () => {
                   {
                     type: 'text',
                     text:
-                      'Clarity - differences in shapes, color, and relationships are easy to identify',
+                      'Overall Clarity (not indicated above) - differences in shapes, color, and relationships are easy to identify',
                   },
                 ],
               },
