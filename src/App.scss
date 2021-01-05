@@ -1,3 +1,124 @@
-.App {
-  text-align: left;
+.progress::-webkit-progress-value {
+  transition: width 0.5s ease;
+}
+
+.storeBox {
+  transition: background-color 0.5s ease;
+}
+
+.hideBox {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 1s, opacity 1s linear;
+}
+
+.showBox {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 1s, opacity 1s linear;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+
+  div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #555;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #555 transparent transparent transparent;
+  }
+
+  div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+
+  div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+
+  div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.kpi-1 {
+  border-radius: 15rem;
+  padding: 2rem;
+  background-color: rgb(255, 166, 0);
+  color: white;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  height: 11rem;
+  width: 11rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+.kpi-2 {
+  border-radius: 15rem;
+  padding: 2rem;
+  background-color: rgb(0, 128, 255);
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  height: 13rem;
+  width: 13rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+.kpi-3 {
+  border-radius: 15rem;
+  padding: 2rem;
+  background-color: rgb(16, 156, 46);
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  height: 14rem;
+  width: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+.kpi-4 {
+  border-radius: 15rem;
+  padding: 2rem;
+  background-color: rgb(241, 79, 14);
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  height: 15rem;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0.5rem;
 }
