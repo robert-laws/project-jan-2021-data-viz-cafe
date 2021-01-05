@@ -55,16 +55,6 @@ export const Header = () => {
               <div className='navbar-dropdown is-boxed'>
                 <NavLink
                   className='navbar-item'
-                  to='/locations'
-                  onClick={(event) => {
-                    event.target.blur();
-                    closeMobileMenu();
-                  }}
-                >
-                  Stores
-                </NavLink>
-                <NavLink
-                  className='navbar-item'
                   to='/menu'
                   onClick={(event) => {
                     event.target.blur();
@@ -72,6 +62,16 @@ export const Header = () => {
                   }}
                 >
                   Menu
+                </NavLink>
+                <NavLink
+                  className='navbar-item'
+                  to='/locations'
+                  onClick={(event) => {
+                    event.target.blur();
+                    closeMobileMenu();
+                  }}
+                >
+                  Locations
                 </NavLink>
                 <NavLink
                   className='navbar-item'
