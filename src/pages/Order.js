@@ -79,7 +79,7 @@ export const Order = () => {
     return date.getHours();
   };
 
-  const appendSpreadsheet = async (row) => {
+  const appendSpreadsheetRows = async (rows) => {
     try {
       await doc.useServiceAccountAuth({
         client_email: CLIENT_EMAIL,
@@ -89,13 +89,14 @@ export const Order = () => {
       await doc.loadInfo();
 
       const sheet = doc.sheetsById[SHEET_ID];
-      await sheet.addRow(row);
+      await sheet.addRows(rows);
     } catch (e) {
       console.error('Error: ', e);
     }
   };
 
-  const handlePlaceOrder = () => {
+  const createOrder = (choices) => {
+    const orders = [];
     const myDate = new Date();
     const dd = myDate.getDate();
 
@@ -105,21 +106,7 @@ export const Order = () => {
 
     const time = getTime(myDate);
 
-    // const order = menuChoices.map((item) => [
-    //   {
-    //     id: uuid_v4(),
-    //     location_id: location.id,
-    //     menu_id: item.id,
-    //     date: today,
-    //     time: time,
-    //     quantity: item.selectedQuantity,
-    //     drive_thru: selectDriveThru,
-    //   },
-    // ]);
-
-    // console.log(order);
-
-    menuChoices.forEach((item) => {
+    choices.forEach((item) => {
       const order = {
         id: uuid_v4(),
         location_id: location.id,
@@ -130,8 +117,17 @@ export const Order = () => {
         drive_thru: selectDriveThru,
       };
 
-      appendSpreadsheet(order);
+      orders.push(order);
     });
+
+    return orders;
+  };
+
+  const handlePlaceOrder = async () => {
+    const orderList = createOrder(menuChoices);
+    console.log(orderList);
+
+    appendSpreadsheetRows(orderList);
 
     setStep('confirmation');
   };
