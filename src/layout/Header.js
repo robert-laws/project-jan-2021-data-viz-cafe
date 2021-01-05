@@ -55,7 +55,7 @@ export const Header = () => {
               <div className='navbar-dropdown is-boxed'>
                 <NavLink
                   className='navbar-item'
-                  to='/stores'
+                  to='/locations'
                   onClick={(event) => {
                     event.target.blur();
                     closeMobileMenu();
