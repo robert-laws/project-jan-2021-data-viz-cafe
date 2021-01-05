@@ -1,0 +1,13 @@
+// LOCATIONS
+export const GET_ALL_LOCATIONS = 'GET_ALL_LOCATIONS';
+export const GET_LOCATION_BY_ID = 'GET_LOCATION_BY_ID';
+export const CLEAR_LOCATION = 'CLEAR_LOCATION';
+
+// MENU
+export const GET_ALL_MENUS = 'GET_ALL_MENUS';
+
+// ORDERS
+export const GET_ALL_ORDERS = 'GET_ALL_ORDERS';
+
+// Modal
+export const UPDATE_MODAL_ACTIVE = 'UPDATE_MODAL_ACTIVE';
