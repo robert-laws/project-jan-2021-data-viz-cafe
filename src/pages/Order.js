@@ -125,7 +125,6 @@ export const Order = () => {
 
   const handlePlaceOrder = async () => {
     const orderList = createOrder(menuChoices);
-    console.log(orderList);
 
     appendSpreadsheetRows(orderList);
 
