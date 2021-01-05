@@ -199,7 +199,7 @@ export const Order = () => {
                   <section
                     key={location.id}
                     className='section'
-                    style={{ minWidth: '27rem' }}
+                    style={{ width: '27rem' }}
                   >
                     <div className='card'>
                       <LocationCard
@@ -257,7 +257,7 @@ export const Order = () => {
                     <section
                       key={menu.id}
                       className='section'
-                      style={{ minWidth: '27rem' }}
+                      style={{ width: '27rem' }}
                     >
                       <div className='p-2'>
                         <MenuCard
@@ -281,7 +281,7 @@ export const Order = () => {
                     <section
                       key={menu.id}
                       className='section'
-                      style={{ minWidth: '27rem' }}
+                      style={{ width: '27rem' }}
                     >
                       <div className='p-2'>
                         <MenuCard
@@ -307,7 +307,7 @@ export const Order = () => {
                     <section
                       key={menu.id}
                       className='section'
-                      style={{ minWidth: '27rem' }}
+                      style={{ width: '27rem' }}
                     >
                       <div className='p-2'>
                         <MenuCard
@@ -333,7 +333,7 @@ export const Order = () => {
                     <section
                       key={menu.id}
                       className='section'
-                      style={{ minWidth: '27rem' }}
+                      style={{ width: '27rem' }}
                     >
                       <div className='p-2'>
                         <MenuCard

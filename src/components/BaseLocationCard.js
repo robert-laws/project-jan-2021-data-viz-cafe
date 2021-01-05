@@ -39,7 +39,7 @@ export const BaseLocationCard = ({
         </p>
       )}
       {card === 'order' ? (
-        <section className='is-flex is-flex-desktop-only'>
+        <section className='is-flex-desktop is-flex-direction-row'>
           <div style={{ width: '120px', marginRight: '10px' }}>
             {getThumbnail(location_type)}
           </div>
