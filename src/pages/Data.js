@@ -1,6 +1,12 @@
 import React, { useState, useEffect, useCallback, useContext } from 'react';
 import OrdersContext from '../context/orders/ordersContext';
-import { PageTitle, Spinner } from '../components';
+import {
+  PageTitle,
+  Spinner,
+  SectionGroup,
+  SectionTitle,
+  SectionContent,
+} from '../components';
 import { SubPage } from '../layout';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 
@@ -52,6 +58,7 @@ export const Data = () => {
           style={{ minHeight: '30rem' }}
         >
           <div>
+            <p className='is-size-4 mb-1'>Loading...</p>
             <Spinner />
           </div>
         </section>
@@ -62,6 +69,26 @@ export const Data = () => {
   return (
     <SubPage>
       <h1 className='title is-size-3-mobile is-size-2-desktop ml-2'>Data</h1>
+      <SectionGroup>
+        <SectionTitle>Cafe Data</SectionTitle>
+        <SectionContent>
+          The Data Viz Cafe produces new data with every order. When a customer
+          purchases something from the store those items are recorded as rows
+          within in the data set. The data set includes: 1) a location id, which
+          corresponds to a location name in a separate table, 2) a menu id,
+          which corresponds to a menu item in a separate table, 3) a date, 4) a
+          time rounded to the nearest hour, 5) a quantity, and 6) whether or not
+          the order was placed through the drive-thru or not.
+        </SectionContent>
+        <SectionTitle>Data Analysis</SectionTitle>
+        <SectionContent>
+          With the data, it's possible to analyze things like the company's most
+          and least popular locations, menu items, times of the day, week,
+          month, and year. It's also possible to analyze the different
+          quantities purchased and how many orders are placed using the drive
+          thru.
+        </SectionContent>
+      </SectionGroup>
       <section className='is-flex is-flex-direction-row is-flex-wrap-wrap'>
         {orders && (
           <table className='table is-bordered is-striped is-narrow is-hoverable is-fullwidth'>

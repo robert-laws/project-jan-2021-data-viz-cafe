@@ -6,6 +6,7 @@ import {
   Locations,
   Menu,
   Order,
+  Visualizations,
   Data,
   Weeks,
   Week1,
@@ -18,7 +19,6 @@ import {
   About,
   NotFound,
 } from './pages';
-import { Visualizations } from './pages/Visualizations';
 import { Modal } from './components';
 
 function App() {

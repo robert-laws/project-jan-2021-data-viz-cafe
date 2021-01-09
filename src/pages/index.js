@@ -2,6 +2,7 @@ export { Home } from './Home';
 export { Cafe } from './Cafe';
 export { Locations } from './Locations';
 export { Menu } from './Menu';
+export { Visualizations } from './Visualizations';
 export { Data } from './Data';
 export { Order } from './Order';
 export { Concepts } from './Concepts';
