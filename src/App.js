@@ -18,6 +18,7 @@ import {
   About,
   NotFound,
 } from './pages';
+import { Visualizations } from './pages/Visualizations';
 import { Modal } from './components';
 
 function App() {
@@ -77,6 +78,9 @@ function App() {
             </Route>
             <Route path='/week5'>
               <Week5 />
+            </Route>
+            <Route path='/visualizations'>
+              <Visualizations />
             </Route>
             <Route path='/*'>
               <NotFound />

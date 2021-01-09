@@ -93,6 +93,16 @@ export const Header = () => {
                 >
                   Data
                 </NavLink>
+                <NavLink
+                  className='navbar-item'
+                  to='/visualizations'
+                  onClick={(event) => {
+                    event.target.blur();
+                    closeMobileMenu();
+                  }}
+                >
+                  Visualizations
+                </NavLink>
               </div>
             </div>
             <div className='navbar-item has-dropdown is-hoverable'>
