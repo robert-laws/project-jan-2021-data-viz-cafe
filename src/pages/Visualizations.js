@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { PageTitle, Subtitle } from '../components';
+import { PageTitle, Subtitle, SectionContent } from '../components';
 import { SubPage } from '../layout';
 
 export const Visualizations = () => {
@@ -42,6 +42,15 @@ export const Visualizations = () => {
   return (
     <SubPage>
       <PageTitle>Visualizations from Tableau</PageTitle>
+      <SectionContent>
+        The visualizations below are embedded from Tableau Public and are based
+        on the{' '}
+        <a href='datasets/data-viz-cafe-dataset.xlsx'>Data Viz Cafe Data set</a>{' '}
+        and built with{' '}
+        <a href='https://public.tableau.com/en-us/s/'>Tableau Public</a>. The
+        visualizations are meant to describe the data and show different types
+        of visualizations that are possible with Tableau.
+      </SectionContent>
       <section className='section'>
         <Subtitle>Map of All Data Viz Cafe Locations</Subtitle>
         <div
