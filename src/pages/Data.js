@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback, useContext } from 'react';
 import OrdersContext from '../context/orders/ordersContext';
 import {
   PageTitle,
+  Subtitle,
   Spinner,
   SectionGroup,
   SectionTitle,
@@ -68,7 +69,7 @@ export const Data = () => {
 
   return (
     <SubPage>
-      <h1 className='title is-size-3-mobile is-size-2-desktop ml-2'>Data</h1>
+      <PageTitle>Data</PageTitle>
       <SectionGroup>
         <SectionTitle>Cafe Data</SectionTitle>
         <SectionContent>
@@ -91,32 +92,35 @@ export const Data = () => {
       </SectionGroup>
       <section className='is-flex is-flex-direction-row is-flex-wrap-wrap'>
         {orders && (
-          <table className='table is-bordered is-striped is-narrow is-hoverable is-fullwidth'>
-            <thead>
-              <tr>
-                <th>row #</th>
-                <th>location id</th>
-                <th>menu id</th>
-                <th>date</th>
-                <th>time</th>
-                <th>quantity</th>
-                <th>drive thru</th>
-              </tr>
-            </thead>
-            <tbody>
-              {orders.map((row, index) => (
-                <tr key={row.id}>
-                  <th>{index + 1}</th>
-                  <td>{row.location_id}</td>
-                  <td>{row.menu_id}</td>
-                  <td>{row.date}</td>
-                  <td>{row.time}</td>
-                  <td>{row.quantity}</td>
-                  <td>{row.drive_thru}</td>
+          <>
+            <Subtitle>Data Viz Cafe - Customer Order Data</Subtitle>
+            <table className='table is-bordered is-striped is-narrow is-hoverable is-fullwidth'>
+              <thead>
+                <tr>
+                  <th>row #</th>
+                  <th>location id</th>
+                  <th>menu id</th>
+                  <th>date</th>
+                  <th>time</th>
+                  <th>quantity</th>
+                  <th>drive thru</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {orders.map((row, index) => (
+                  <tr key={row.id}>
+                    <th>{index + 1}</th>
+                    <td>{row.location_id}</td>
+                    <td>{row.menu_id}</td>
+                    <td>{row.date}</td>
+                    <td>{row.time}</td>
+                    <td>{row.quantity}</td>
+                    <td>{row.drive_thru}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </>
         )}
       </section>
     </SubPage>
