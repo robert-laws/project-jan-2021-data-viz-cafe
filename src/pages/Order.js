@@ -1,4 +1,5 @@
 import React, { useState, useCallback, useContext, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
 import LocationsContext from '../context/locations/locationsContext';
 import MenusContext from '../context/menus/menusContext';
@@ -444,9 +445,16 @@ export const Order = () => {
               <h4 className='is-size-3-desktop mb-4'>Order Confirmed</h4>
               <p>Thank you for your order</p>
             </div>
-            <button className={'button is-primary'} onClick={restartOrder}>
+            <button
+              style={{ marginRight: '1rem', marginBottom: '1rem' }}
+              className={'button is-primary'}
+              onClick={restartOrder}
+            >
               Place Another Order
             </button>
+            <Link className='button is-info' to='/data'>
+              View Cafe Data
+            </Link>
           </section>
         </Fade>
       )}
