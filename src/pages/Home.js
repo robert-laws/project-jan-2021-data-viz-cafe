@@ -40,11 +40,11 @@ export const Home = () => {
         <section className='section'>
           <div className='container'>
             <div className='columns'>
-              <div className='column "column is-8 is-offset-2'>
+              <div className='column "column is-10 is-offset-1'>
                 <h1 className='title is-size-2-desktop has-text-centered mb-6'>
                   Data Visualization with Real-World Examples
                 </h1>
-                <div className='columns'>
+                <div className='columns is-desktop'>
                   <div className='column is-one-half has-text-centered'>
                     <img
                       style={{ maxWidth: '400px', maxHeight: '400px' }}
@@ -118,11 +118,11 @@ export const Home = () => {
         <section className='section'>
           <div className='container'>
             <div className='columns'>
-              <div className='column "column is-8 is-offset-2'>
+              <div className='column "column is-10 is-offset-1'>
                 <h1 className='title is-size-2-desktop has-text-centered mb-6'>
                   Discover Trends through Data Analytics
                 </h1>
-                <div className='columns'>
+                <div className='columns is-desktop'>
                   <div className='column is-one-half has-text-centered'>
                     <img
                       style={{ maxWidth: '400px', maxHeight: '400px' }}
@@ -197,11 +197,11 @@ export const Home = () => {
         <section className='section'>
           <div className='container'>
             <div className='columns'>
-              <div className='column "column is-8 is-offset-2'>
+              <div className='column "column is-10 is-offset-1'>
                 <h1 className='title is-size-2-desktop has-text-centered mb-6'>
                   Visualize the Menu & Discover Top Products
                 </h1>
-                <div className='columns'>
+                <div className='columns is-desktop'>
                   <div className='column is-one-half has-text-centered'>
                     <img
                       style={{ maxWidth: '400px', maxHeight: '400px' }}
@@ -275,11 +275,11 @@ export const Home = () => {
         <section className='section'>
           <div className='container'>
             <div className='columns'>
-              <div className='column "column is-8 is-offset-2'>
+              <div className='column "column is-10 is-offset-1'>
                 <h1 className='title is-size-2-desktop has-text-centered mb-6'>
                   Visualize Cafe Locations Geographically
                 </h1>
-                <div className='columns'>
+                <div className='columns is-desktop'>
                   <div className='column is-one-half has-text-centered'>
                     <img
                       style={{ maxWidth: '400px', maxHeight: '400px' }}
