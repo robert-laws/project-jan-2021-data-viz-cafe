@@ -25,6 +25,16 @@ export const course = [
         url: 'datasets/data-viz-cafe-dataset.xlsx',
         text: 'Data Viz Cafe - Dataset',
       },
+      {
+        type: 'link',
+        url: 'datasets/oecd-stat-home-internet-access.xlsx',
+        text: 'OECD-Stat - Home Internet Access',
+      },
+      {
+        type: 'link',
+        url: 'datasets/oecd-stat-population-statistics.xlsx',
+        text: 'OECD-Stat - Population Data',
+      },
     ],
   },
 ];
