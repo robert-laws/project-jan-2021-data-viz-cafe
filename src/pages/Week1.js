@@ -91,8 +91,8 @@ export const Week1 = () => {
         </SectionTitle>
 
         <SectionContent>
-          <div class='columns'>
-            <div class='column is-three-fifths is-offset-one-fifth'>
+          <div className='columns'>
+            <div className='column is-three-fifths is-offset-one-fifth'>
               <Image
                 src={dataVisualizationComponents}
                 alt='Data Visualization Components'
@@ -203,8 +203,8 @@ export const Week1 = () => {
       <SectionGroup>
         <SectionTitle id='connecting-to-data'>Connecting to Data</SectionTitle>
         <SectionContent>
-          <div class='columns'>
-            <div class='column is-three-fifths is-offset-one-fifth'>
+          <div className='columns'>
+            <div className='column is-three-fifths is-offset-one-fifth'>
               <iframe
                 style={{ width: '100%', minHeight: '450px' }}
                 title='Connecting to Data in Tableau'
@@ -223,8 +223,8 @@ export const Week1 = () => {
           Interface Walkthrough
         </SectionTitle>
         <SectionContent>
-          <div class='columns'>
-            <div class='column is-three-fifths is-offset-one-fifth'>
+          <div className='columns'>
+            <div className='column is-three-fifths is-offset-one-fifth'>
               <iframe
                 title='Tableau Interface Walkthrough'
                 style={{ width: '100%', minHeight: '450px' }}
@@ -243,8 +243,8 @@ export const Week1 = () => {
           Basics of Building Visualizations
         </SectionTitle>
         <SectionContent>
-          <div class='columns'>
-            <div class='column is-three-fifths is-offset-one-fifth'>
+          <div className='columns'>
+            <div className='column is-three-fifths is-offset-one-fifth'>
               <iframe
                 title='Basics of Building Visualizations'
                 style={{ width: '100%', minHeight: '450px' }}
@@ -263,8 +263,8 @@ export const Week1 = () => {
           Labeling Visualizations
         </SectionTitle>
         <SectionContent>
-          <div class='columns'>
-            <div class='column is-three-fifths is-offset-one-fifth'>
+          <div className='columns'>
+            <div className='column is-three-fifths is-offset-one-fifth'>
               <iframe
                 title='Labeling Visualizations'
                 style={{ width: '100%', minHeight: '450px' }}
@@ -281,8 +281,8 @@ export const Week1 = () => {
       <SectionGroup>
         <SectionTitle id='sorting'>Sorting</SectionTitle>
         <SectionContent>
-          <div class='columns'>
-            <div class='column is-three-fifths is-offset-one-fifth'>
+          <div className='columns'>
+            <div className='column is-three-fifths is-offset-one-fifth'>
               <iframe
                 title='Sorting'
                 style={{ width: '100%', minHeight: '450px' }}
@@ -299,8 +299,8 @@ export const Week1 = () => {
       <SectionGroup>
         <SectionTitle id='filtering'>Filtering</SectionTitle>
         <SectionContent>
-          <div class='columns'>
-            <div class='column is-three-fifths is-offset-one-fifth'>
+          <div className='columns'>
+            <div className='column is-three-fifths is-offset-one-fifth'>
               <iframe
                 title='Filtering'
                 style={{ width: '100%', minHeight: '450px' }}
@@ -319,8 +319,8 @@ export const Week1 = () => {
           Exporting Visualizations
         </SectionTitle>
         <SectionContent>
-          <div class='columns'>
-            <div class='column is-three-fifths is-offset-one-fifth'>
+          <div className='columns'>
+            <div className='column is-three-fifths is-offset-one-fifth'>
               <iframe
                 title='Exporting Visualizations'
                 style={{ width: '100%', minHeight: '450px' }}
@@ -338,8 +338,8 @@ export const Week1 = () => {
       <SectionGroup>
         <SectionTitle id='column-chart'>Column Chart</SectionTitle>
         <SectionContent>
-          <div class='columns'>
-            <div class='column is-three-fifths is-offset-one-fifth'>
+          <div className='columns'>
+            <div className='column is-three-fifths is-offset-one-fifth'>
               <Image
                 src={barChartExample}
                 alt='Column Chart'
@@ -359,8 +359,8 @@ export const Week1 = () => {
           Multi-set Column Chart
         </SectionTitle>
         <SectionContent>
-          <div class='columns'>
-            <div class='column is-three-fifths is-offset-one-fifth'>
+          <div className='columns'>
+            <div className='column is-three-fifths is-offset-one-fifth'>
               <Image
                 src={multisetBarChartExample}
                 alt='Multiset Column Chart'
@@ -377,8 +377,8 @@ export const Week1 = () => {
       <SectionGroup>
         <SectionTitle id='pie-chart'>Pie Chart</SectionTitle>
         <SectionContent>
-          <div class='columns'>
-            <div class='column is-three-fifths is-offset-one-fifth'>
+          <div className='columns'>
+            <div className='column is-three-fifths is-offset-one-fifth'>
               <Image
                 src={pieChartExample}
                 alt='Pie Chart'

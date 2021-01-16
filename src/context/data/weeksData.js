@@ -98,12 +98,12 @@ export const week2 = [
         text: 'What is a dataset?',
       },
       { type: 'link', url: '#data-types', text: 'Data types' },
-      { type: 'link', url: '#quantitative-data', text: 'Quantitative data' },
       { type: 'link', url: '#categorical-data', text: 'Categorical data' },
+      { type: 'link', url: '#quantitative-data', text: 'Quantitative data' },
       {
         type: 'link',
-        url: '#finding-and-cleaning-datasets',
-        text: 'Finding and cleaning datasets',
+        url: '#finding-and-preparing-datasets',
+        text: 'Finding and preparing datasets',
       },
     ],
   },
@@ -119,6 +119,11 @@ export const week2 = [
         type: 'link',
         url: '#joining-data-from-multiple-sheets',
         text: 'Joining data from multiple sheets',
+      },
+      {
+        type: 'link',
+        url: '#measures-and-dimensions-in-tableau',
+        text: 'Measures and dimensions in Tableau',
       },
       {
         type: 'link',
