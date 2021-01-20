@@ -160,6 +160,26 @@ export const week3 = [
         url: '#the-value-of-data-analytics',
         text: 'The value of data analytics',
       },
+      {
+        type: 'link',
+        url: '#stages-of-data-analytics',
+        text: 'Stages of Data Analytics',
+      },
+      {
+        type: 'link',
+        url: '#descriptive-analytics',
+        text: 'Descriptive Analytics',
+      },
+      {
+        type: 'link',
+        url: '#key-performance-indicators',
+        text: 'Key Performance Indicators',
+      },
+      {
+        type: 'link',
+        url: '#aggregation',
+        text: 'Aggregation',
+      },
     ],
   },
   {
@@ -167,13 +187,18 @@ export const week3 = [
     items: [
       {
         type: 'link',
-        url: '#what-is-a-dataset',
+        url: '#viewing-data-in-tables',
+        text: 'Viewing data in tables',
+      },
+      {
+        type: 'link',
+        url: '#data-grouping-and-hierarchies',
         text: 'Data grouping and hierarchies',
       },
       {
         type: 'link',
-        url: '#viewing-data-in-tables',
-        text: 'Viewing data in tables',
+        url: '#working-with-aggregated-data',
+        text: 'Working with aggregated data',
       },
       {
         type: 'link',
@@ -187,18 +212,8 @@ export const week3 = [
       },
       {
         type: 'link',
-        url: '#working-with-aggregated-data',
-        text: 'Working with aggregated data',
-      },
-      {
-        type: 'link',
         url: '#using-quick-table-calculations-and-reference-lines',
         text: 'Using quick table calculations and reference lines',
-      },
-      {
-        type: 'link',
-        url: '#finding-and-cleaning-datasets',
-        text: 'Finding and cleaning datasets',
       },
     ],
   },
