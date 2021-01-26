@@ -236,7 +236,7 @@ export const week4 = [
       {
         type: 'link',
         url: '#combining-maps-and-data',
-        text: 'Combining maps and data',
+        text: 'Combining Maps and Data',
       },
     ],
   },
@@ -245,8 +245,8 @@ export const week4 = [
     items: [
       {
         type: 'link',
-        url: '#datasets-with-geographic-data',
-        text: 'Datasets with geographic data',
+        url: '#types-of-geographic-data',
+        text: 'Types of Geographic Data',
       },
     ],
   },
@@ -255,24 +255,23 @@ export const week4 = [
     items: [
       {
         type: 'link',
-        url: '#importing-and-building-maps-with-geographic-data',
-        text:
-          'Importing and building maps with geographic data (country, region, state, provincial, longitude, and latitude data)',
+        url: '#building-maps-with-data',
+        text: 'Building Maps with Data',
       },
       {
         type: 'link',
-        url: '#basemaps',
-        text: 'Basemaps',
+        url: '#fixing-geographic-mismatch-problems',
+        text: 'Fixing Geographic Mismatch Problems',
       },
       {
         type: 'link',
-        url: '#fixing-geographic-mismatch-errors',
-        text: 'Fixing geographic mismatch errors',
+        url: '#using-basemaps-and-visual-enhancements',
+        text: 'Using Basemaps and Visual Enhancements',
       },
       {
         type: 'link',
         url: '#map-layers-and-options',
-        text: 'Map layers and options',
+        text: 'Map Layers and Options',
       },
     ],
   },
