@@ -104,8 +104,6 @@ export const Week4 = () => {
           <strong>
             Other types of geographic data that can be used in Tableau
           </strong>
-          Longitude & Longitude in decimal degrees State/Province ZIP
-          Code/Postcode
           <SectionList
             lists={[
               {
