@@ -299,7 +299,12 @@ export const week5 = [
       {
         type: 'link',
         url: '#storytelling-with-data',
-        text: 'Storytelling with data',
+        text: 'Storytelling with Data',
+      },
+      {
+        type: 'link',
+        url: '#components-of-a-dashboard',
+        text: 'Components of a Dashboard',
       },
     ],
   },
@@ -308,13 +313,23 @@ export const week5 = [
     items: [
       {
         type: 'link',
-        url: '#building-dashboards-and-adding-interactivity',
-        text: 'Building dashboards and adding interactivity',
+        url: '#building-dashboards',
+        text: 'Building Dashboards',
       },
       {
         type: 'link',
         url: '#building-stories',
-        text: 'Building stories',
+        text: 'Building Stories',
+      },
+    ],
+  },
+  {
+    title: 'Useful Links',
+    items: [
+      {
+        type: 'link',
+        url: '#tableau-help-for-dashboards-and-stories',
+        text: 'Tableau Help for Dashboards and Stories',
       },
     ],
   },

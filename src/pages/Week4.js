@@ -6,6 +6,7 @@ import {
   SectionList,
   SectionTitle,
   SectionContent,
+  Link,
   Image,
 } from '../components';
 import { SubPage } from '../layout';
@@ -149,6 +150,10 @@ export const Week4 = () => {
                 ],
               },
             ]}
+          />
+          <Link
+            text='Learn more about Map Data in Tableau'
+            url='https://www.tableau.com/en-gb/mapdata'
           />
         </SectionContent>
       </SectionGroup>
