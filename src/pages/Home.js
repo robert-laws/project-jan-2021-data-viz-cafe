@@ -47,7 +47,7 @@ const Home = () => {
                 <div className='columns is-desktop'>
                   <div className='column is-one-half has-text-centered'>
                     <img
-                      style={{ maxWidth: '400px', maxHeight: '400px' }}
+                      style={{ width: '400px', height: '400px' }}
                       src={locationUrban}
                       alt='Data Viz Cafe Urban Location'
                     />
@@ -95,7 +95,7 @@ const Home = () => {
                   <div className='is-flex-desktop is-flex-direction-row is-justify-content-center '>
                     <div className='is-flex is-flex-direction-column is-justify-content-center is-align-items-center'>
                       <img
-                        style={{ maxWidth: '400px', maxHeight: '300px' }}
+                        style={{ width: '400px', height: '350px' }}
                         className='image mx-5'
                         src={coffeeBeans}
                         alt='Coffee Bag and Beans'
@@ -125,7 +125,7 @@ const Home = () => {
                 <div className='columns is-desktop'>
                   <div className='column is-one-half has-text-centered'>
                     <img
-                      style={{ maxWidth: '400px', maxHeight: '400px' }}
+                      style={{ width: '400px', height: '400px' }}
                       src={scatterPlot}
                       alt='Data Viz Cafe Urban Location'
                     />
@@ -173,7 +173,7 @@ const Home = () => {
                   <div className='is-flex-desktop is-flex-direction-row is-justify-content-center '>
                     <div className='is-flex is-flex-direction-column is-justify-content-center is-align-items-center'>
                       <img
-                        style={{ maxWidth: '400px', maxHeight: '400px' }}
+                        style={{ width: '400px', height: '400px' }}
                         className='image mx-5'
                         src={cafeInterior}
                         alt='Paper Coffee Cup'
@@ -204,7 +204,7 @@ const Home = () => {
                 <div className='columns is-desktop'>
                   <div className='column is-one-half has-text-centered'>
                     <img
-                      style={{ maxWidth: '400px', maxHeight: '400px' }}
+                      style={{ width: '400px', height: '400px' }}
                       src={dataVizLineGraph}
                       alt='Data Viz Cafe Urban Location'
                     />
@@ -252,7 +252,7 @@ const Home = () => {
                   <div className='is-flex-desktop is-flex-direction-row is-justify-content-center '>
                     <div className='is-flex is-flex-direction-column is-justify-content-center is-align-items-center'>
                       <img
-                        style={{ maxWidth: '400px', maxHeight: '400px' }}
+                        style={{ width: '400px', height: '400px' }}
                         className='image mx-5'
                         src={locationSuburban}
                         alt='Cafe Shop'
@@ -282,7 +282,7 @@ const Home = () => {
                 <div className='columns is-desktop'>
                   <div className='column is-one-half has-text-centered'>
                     <img
-                      style={{ maxWidth: '400px', maxHeight: '400px' }}
+                      style={{ width: '400px', height: '400px' }}
                       src={locationRural}
                       alt='Data Viz Cafe Rural Location'
                     />
