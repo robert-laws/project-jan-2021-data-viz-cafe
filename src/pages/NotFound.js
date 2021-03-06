@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export const NotFound = () => {
+const NotFound = () => {
   return (
     <section
       className='section is-flex is-flex-direction-column is-align-items-center is-justify-content-center'
@@ -16,3 +16,5 @@ export const NotFound = () => {
     </section>
   );
 };
+
+export default NotFound;

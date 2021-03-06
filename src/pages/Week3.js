@@ -19,7 +19,7 @@ import bubbleChart from '../images/bubble-chart.png';
 import descriptiveAnalytics from '../images/descriptive-analytics.png';
 import kpi from '../images/kpi.png';
 
-export const Week3 = () => {
+const Week3 = () => {
   return (
     <SubPage>
       <PageTitle>Week 3</PageTitle>
@@ -359,3 +359,5 @@ export const Week3 = () => {
     </SubPage>
   );
 };
+
+export default Week3;

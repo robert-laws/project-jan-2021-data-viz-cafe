@@ -18,7 +18,7 @@ import lineGraph from '../images/line-graph.png';
 import areaGraph from '../images/area-graph.png';
 import stackedAreaGraph from '../images/stacked-area-graph.png';
 
-export const Week2 = () => {
+const Week2 = () => {
   return (
     <SubPage>
       <PageTitle>Week 2</PageTitle>
@@ -344,3 +344,5 @@ export const Week2 = () => {
     </SubPage>
   );
 };
+
+export default Week2;

@@ -8,7 +8,7 @@ import { LocationCard, MenuCard, PageTitle } from '../components';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 import { v4 as uuid_v4 } from 'uuid';
 
-export const Order = () => {
+const Order = () => {
   const SPREADSHEET_ID = process.env.REACT_APP_SPREADSHEET_ID;
   const SHEET_ID = process.env.REACT_APP_SHEET_ID;
   const CLIENT_EMAIL = process.env.REACT_APP_GOOGLE_CLIENT_EMAIL;
@@ -487,3 +487,5 @@ export const Order = () => {
     </SubPage>
   );
 };
+
+export default Order;

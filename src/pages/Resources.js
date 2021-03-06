@@ -13,7 +13,7 @@ import {
   course,
 } from '../context/data/resourcesData';
 
-export const Resources = () => {
+const Resources = () => {
   return (
     <SubPage>
       <PageTitle>Resources</PageTitle>
@@ -37,3 +37,5 @@ export const Resources = () => {
     </SubPage>
   );
 };
+
+export default Resources;

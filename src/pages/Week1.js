@@ -25,7 +25,7 @@ import multisetBarChartExample from '../images/multiset-bar-chart-example.png';
 import pieChartExample from '../images/pie-chart-example.png';
 import dataVisualizationComponents from '../images/data-visualization-components.png';
 
-export const Week1 = () => {
+const Week1 = () => {
   return (
     <SubPage>
       <PageTitle>Week 1</PageTitle>
@@ -395,3 +395,5 @@ export const Week1 = () => {
     </SubPage>
   );
 };
+
+export default Week1;

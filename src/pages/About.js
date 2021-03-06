@@ -3,7 +3,7 @@ import { PageTitle } from '../components';
 import { SubPage } from '../layout';
 import paperCupArtistic from '../images/home-page/paper-cup-artistic.png';
 
-export const About = () => {
+const About = () => {
   return (
     <SubPage>
       <PageTitle>About this Website</PageTitle>
@@ -62,3 +62,5 @@ export const About = () => {
     </SubPage>
   );
 };
+
+export default About;

@@ -2,7 +2,7 @@ import React from 'react';
 import { PageTitle, SectionList } from '../components';
 import { SubPage } from '../layout';
 
-export const Weeks = () => {
+const Weeks = () => {
   return (
     <SubPage>
       <PageTitle>Class Weeks</PageTitle>
@@ -43,3 +43,5 @@ export const Weeks = () => {
     </SubPage>
   );
 };
+
+export default Weeks;

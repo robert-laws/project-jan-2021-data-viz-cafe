@@ -12,7 +12,7 @@ import { SubPage } from '../layout';
 import { week5 } from '../context/data/weeksData';
 import componentsOfADashboard from '../images/components-of-a-dashboard.png';
 
-export const Week5 = () => {
+const Week5 = () => {
   return (
     <SubPage>
       <PageTitle>Week 5</PageTitle>
@@ -162,3 +162,5 @@ export const Week5 = () => {
     </SubPage>
   );
 };
+
+export default Week5;

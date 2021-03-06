@@ -4,7 +4,7 @@ import ModalContext from '../context/modal/modalContext';
 import { SubPage } from '../layout';
 import { BaseLocationCard, PageTitle } from '../components';
 
-export const Locations = () => {
+const Locations = () => {
   const [locationId, setLocationId] = useState(null);
 
   const locationsContext = useContext(LocationsContext);
@@ -63,3 +63,5 @@ export const Locations = () => {
     </SubPage>
   );
 };
+
+export default Locations;

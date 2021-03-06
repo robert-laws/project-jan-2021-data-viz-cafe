@@ -4,7 +4,7 @@ import ModalContext from '../context/modal/modalContext';
 import { SubPage } from '../layout';
 import { BaseMenuCard, PageTitle } from '../components';
 
-export const Menu = () => {
+const Menu = () => {
   const [menuId, setMenuId] = useState(null);
 
   const menusContext = useContext(MenusContext);
@@ -155,3 +155,5 @@ export const Menu = () => {
     </SubPage>
   );
 };
+
+export default Menu;

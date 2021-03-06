@@ -2,7 +2,7 @@ import React from 'react';
 import { PageTitle } from '../components';
 import { SubPage } from '../layout';
 
-export const Concepts = () => {
+const Concepts = () => {
   return (
     <SubPage>
       <PageTitle>Data Visualization Concepts</PageTitle>
@@ -59,3 +59,5 @@ export const Concepts = () => {
     </SubPage>
   );
 };
+
+export default Concepts;

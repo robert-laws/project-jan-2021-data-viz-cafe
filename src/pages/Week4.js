@@ -18,7 +18,7 @@ import australiaAnnualRainfallMap from '../images/australia-annual-rainfall-map.
 import dotMap from '../images/dot-map.png';
 import choroplethMap from '../images/choropleth-map.png';
 
-export const Week4 = () => {
+const Week4 = () => {
   return (
     <SubPage>
       <PageTitle>Week 4</PageTitle>
@@ -271,3 +271,5 @@ export const Week4 = () => {
     </SubPage>
   );
 };
+
+export default Week4;

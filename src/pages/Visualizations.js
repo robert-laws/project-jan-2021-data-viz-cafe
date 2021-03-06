@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { PageTitle, Subtitle, SectionContent } from '../components';
 import { SubPage } from '../layout';
 
-export const Visualizations = () => {
+const Visualizations = () => {
   useEffect(() => {
     if (document.getElementById('viz1610192503234')) {
       var divElementMap = document.getElementById('viz1610192503234');
@@ -200,3 +200,5 @@ export const Visualizations = () => {
     </SubPage>
   );
 };
+
+export default Visualizations;

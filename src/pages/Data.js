@@ -11,7 +11,7 @@ import {
 import { SubPage } from '../layout';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 
-export const Data = () => {
+const Data = () => {
   const ordersContext = useContext(OrdersContext);
   const { orders, getOrders } = ordersContext;
 
@@ -126,3 +126,5 @@ export const Data = () => {
     </SubPage>
   );
 };
+
+export default Data;

@@ -10,7 +10,7 @@ import locationUrban from '../images/home-page/data-viz-stores-urban.png';
 import coffeeBeans from '../images/home-page/data-viz-bag.png';
 import scatterPlot from '../images/home-page/data-viz-scatter-plot.png';
 
-export const Home = () => {
+const Home = () => {
   return (
     <>
       <section className='section'>
@@ -348,3 +348,5 @@ export const Home = () => {
     </>
   );
 };
+
+export default Home;

@@ -7,7 +7,7 @@ import cafeLatteThumbnail from '../images/cafe-latte-thumbnail.jpg';
 import columnChartThumbnail from '../images/column-chart-thumbnail.png';
 import orderCartThumbnail from '../images/order-cart-thumbnail.png';
 
-export const Cafe = () => {
+const Cafe = () => {
   return (
     <SubPage>
       <PageTitle>Visit the Data Viz Cafe</PageTitle>
@@ -75,3 +75,5 @@ export const Cafe = () => {
     </SubPage>
   );
 };
+
+export default Cafe;
