@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 import App from './App';
 import 'bulma/css/bulma.css';
 import './App.scss';
@@ -8,7 +8,7 @@ import MenusState from './context/menus/MenusState';
 import OrdersState from './context/orders/OrdersState';
 import ModalState from './context/modal/ModalState';
 
-ReactDOM.render(
+render(
   <React.StrictMode>
     <LocationsState>
       <MenusState>

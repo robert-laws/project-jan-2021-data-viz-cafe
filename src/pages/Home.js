@@ -28,7 +28,11 @@ const Home = () => {
               </h3>
             </div>
             <div className='column'>
-              <img src={hero} alt='Hero for Data Visualization' />
+              <img
+                style={{ width: '888px', height: '550px' }}
+                src={hero}
+                alt='Hero for Data Visualization'
+              />
             </div>
           </div>
         </div>
@@ -331,6 +335,7 @@ const Home = () => {
                     <div className='is-flex is-flex-direction-column is-justify-content-center is-align-items-center'>
                       <img
                         className='image mx-5'
+                        style={{ width: '493px', height: '308px' }}
                         src={cafeSetting}
                         alt='Cafe Shop'
                       />
