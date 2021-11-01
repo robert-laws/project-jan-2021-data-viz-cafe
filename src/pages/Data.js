@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useCallback, useContext } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
+import csvtojson from 'csvtojson';
 import OrdersContext from '../context/orders/ordersContext';
 import {
   PageTitle,
@@ -9,21 +10,21 @@ import {
   SectionContent,
 } from '../components';
 import { SubPage } from '../layout';
-import { GoogleSpreadsheet } from 'google-spreadsheet';
+// import { GoogleSpreadsheet } from 'google-spreadsheet';
 
 const Data = () => {
   const ordersContext = useContext(OrdersContext);
   const { orders, getOrders } = ordersContext;
 
-  const SPREADSHEET_ID = process.env.REACT_APP_SPREADSHEET_ID;
-  const SHEET_ID = process.env.REACT_APP_SHEET_ID;
-  const CLIENT_EMAIL = process.env.REACT_APP_GOOGLE_CLIENT_EMAIL;
-  const PRIVATE_KEY = process.env.REACT_APP_GOOGLE_SERVICE_PRIVATE_KEY;
+  // const SPREADSHEET_ID = process.env.REACT_APP_SPREADSHEET_ID;
+  // const SHEET_ID = process.env.REACT_APP_SHEET_ID;
+  // const CLIENT_EMAIL = process.env.REACT_APP_GOOGLE_CLIENT_EMAIL;
+  // const PRIVATE_KEY = process.env.REACT_APP_GOOGLE_SERVICE_PRIVATE_KEY;
 
-  const getDoc = useCallback(() => {
-    const doc = new GoogleSpreadsheet(SPREADSHEET_ID);
-    return doc;
-  }, [SPREADSHEET_ID]);
+  // const getDoc = useCallback(() => {
+  //   const doc = new GoogleSpreadsheet(SPREADSHEET_ID);
+  //   return doc;
+  // }, [SPREADSHEET_ID]);
 
   const [loading, setLoading] = useState(true);
 
@@ -31,15 +32,25 @@ const Data = () => {
     const getRows = async () => {
       setLoading(true);
       try {
-        const doc = getDoc();
-        await doc.useServiceAccountAuth({
-          client_email: CLIENT_EMAIL,
-          private_key: PRIVATE_KEY,
-        });
+        // const doc = getDoc();
+        // await doc.useServiceAccountAuth({
+        //   client_email: CLIENT_EMAIL,
+        //   private_key: PRIVATE_KEY,
+        // });
 
-        await doc.loadInfo();
-        const sheet = doc.sheetsById[SHEET_ID];
-        const rows = await sheet.getRows();
+        // await doc.loadInfo();
+        // const sheet = doc.sheetsById[SHEET_ID];
+        // const rows = await sheet.getRows();
+
+        const URL =
+          'https://docs.google.com/spreadsheets/d/1M-QhSttMwtv0hOPA6bQM8XlaT_kfyHmhSXx-njEgUNw/export?format=csv#gid=1559851438';
+
+        const res = await fetch(URL);
+        const csvData = await res.text();
+        const rows = await csvtojson().fromString(csvData);
+
+        console.log(rows);
+
         getOrders(rows);
         setLoading(false);
       } catch (error) {
@@ -48,7 +59,7 @@ const Data = () => {
     };
 
     getRows();
-  }, [CLIENT_EMAIL, PRIVATE_KEY, SHEET_ID, getDoc, getOrders]);
+  }, [getOrders]);
 
   if (loading) {
     return (

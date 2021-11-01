@@ -16,7 +16,7 @@ const Cafe = () => {
           <div className='box has-text-centered'>
             <Link className='is-size-3-desktop is-size-4-mobile' to='/menu'>
               Menu
-              <figure class='image'>
+              <figure className='image'>
                 <img
                   src={cafeLatteThumbnail}
                   alt='Menu'
@@ -33,7 +33,7 @@ const Cafe = () => {
               to='/locations'
             >
               Locations
-              <figure class='image'>
+              <figure className='image'>
                 <img
                   src={suburbanThumbnail}
                   alt='Locations'
@@ -47,7 +47,7 @@ const Cafe = () => {
           <div className='box has-text-centered'>
             <Link className='is-size-3-desktop is-size-4-mobile' to='/order'>
               Place an Order
-              <figure class='image'>
+              <figure className='image'>
                 <img
                   src={orderCartThumbnail}
                   alt='Place an Order'
@@ -61,7 +61,7 @@ const Cafe = () => {
           <div className='box has-text-centered'>
             <Link className='is-size-3-desktop is-size-4-mobile' to='/data'>
               Data
-              <figure class='image'>
+              <figure className='image'>
                 <img
                   src={columnChartThumbnail}
                   alt='Data'

@@ -20,9 +20,8 @@ const Visualizations = () => {
 
     if (document.getElementById('viz1610193687947')) {
       var divElementMenuTable = document.getElementById('viz1610193687947');
-      var vizElementMenuTable = divElementMenuTable.getElementsByTagName(
-        'object'
-      )[0];
+      var vizElementMenuTable =
+        divElementMenuTable.getElementsByTagName('object')[0];
 
       if (vizElementMenuTable) {
         vizElementMenuTable.style.width = '100%';
@@ -38,12 +37,10 @@ const Visualizations = () => {
       }
 
       if (document.getElementById('viz1610279567451')) {
-        var divElementLocationsChart = document.getElementById(
-          'viz1610279567451'
-        );
-        var vizElementLocationsChart = divElementLocationsChart.getElementsByTagName(
-          'object'
-        )[0];
+        var divElementLocationsChart =
+          document.getElementById('viz1610279567451');
+        var vizElementLocationsChart =
+          divElementLocationsChart.getElementsByTagName('object')[0];
 
         if (vizElementLocationsChart) {
           vizElementLocationsChart.style.width = '100%';
@@ -89,7 +86,7 @@ const Visualizations = () => {
               />
             </a>
           </noscript>
-          <object class='tableauViz' style={{ display: 'none' }}>
+          <object className='tableauViz' style={{ display: 'none' }}>
             <param
               name='host_url'
               value='https%3A%2F%2Fpublic.tableau.com%2F'
@@ -129,7 +126,7 @@ const Visualizations = () => {
               />
             </a>
           </noscript>
-          <object class='tableauViz' style={{ display: 'none' }}>
+          <object className='tableauViz' style={{ display: 'none' }}>
             <param
               name='host_url'
               value='https%3A%2F%2Fpublic.tableau.com%2F'
@@ -157,7 +154,7 @@ const Visualizations = () => {
       <section className='section'>
         <Subtitle>Column Chart of Locations by Service Population</Subtitle>
         <div
-          class='tableauPlaceholder'
+          className='tableauPlaceholder'
           id='viz1610279567451'
           style={{ position: 'relative' }}
         >
@@ -170,7 +167,7 @@ const Visualizations = () => {
               />
             </a>
           </noscript>
-          <object class='tableauViz' style={{ display: 'none' }}>
+          <object className='tableauViz' style={{ display: 'none' }}>
             <param
               name='host_url'
               value='https%3A%2F%2Fpublic.tableau.com%2F'

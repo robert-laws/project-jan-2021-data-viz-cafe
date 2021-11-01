@@ -40,8 +40,8 @@ function App() {
                 alignItems: 'center',
               }}
             >
-              <div class='preLoadSpinner'></div>
-              <div class='preLoadSpinnerText'>Loading...</div>
+              <div className='preLoadSpinner'></div>
+              <div className='preLoadSpinnerText'>Loading...</div>
             </div>
           }
         >
